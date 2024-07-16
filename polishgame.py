@@ -1,17 +1,17 @@
 import random
 import time
 
-tutulan_sayi = random.randint(1, 100)
-
-tahmin = None
-tahmin_sayisi = 0
-
 print("oyun mod 1 == sayi tutan bilgisayar")
 print("oyun mod 2 == tahmin eden bilgisayar")
 print()
 
 oyunmod = int(input("Lütfen oyun modu seç(1 ya da 2) :"))
 if oyunmod == 1:
+    tutulan_sayi = random.randint(1, 100)
+
+    tahmin = None
+    tahmin_sayisi = 0
+
     while tahmin != tutulan_sayi:
         tahmin = int(input("1 ile 100 arasinda bir sayi tahmin edin: "))
         tahmin_sayisi += 1 
